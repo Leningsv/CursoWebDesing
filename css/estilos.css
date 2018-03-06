@@ -1,0 +1,60 @@
+/* Selector universal  */
+* {
+    color: rebeccapurple;
+}
+body {
+    color: blue;
+}
+h1, h2, h3 {
+    color: red;
+}
+/* Selector desendente:
+    -busca todos los Elementos que esten dentro de otro, el orden 
+     es muy importante es lo que define si se aplica o no el estilo */
+div p {
+    font-size: 20px;
+    color: black;
+}
+
+p a {
+    color: red;
+}
+/* Estilos atadas a una Clase - Utilizada en varios lugares*/
+.big {
+    font-size: 30px;
+}
+/* Estilos atados a un id - Casos unicos, especificos*/
+#link2 {
+    font-size: 25px;
+}
+.red {
+    color: red;
+}
+
+/* Selector de desendente con clases:
+    - Todos los elementos de un tipo con una clase especifica entran este estilo */
+p .big  {
+    font-family: cursive;
+}
+
+div > p {
+    font-size: 20px;
+}
+
+/* Selector de atributos:
+    - Todos los elementos de un tipo tendran un estilo */
+input[type] {
+
+}
+
+/* Selector de Atributo y valor: 
+    - Todolos elementos de tipo input con un valor tendran estilo */
+input[type = "text"] {
+
+}
+
+/* Herencia: 
+    -Todos los elementos dentro del body heredan el estilo */
+body {
+    color: blue;
+}
